@@ -4,25 +4,29 @@
     <head>
     </head>
     <body>
-        <div>
-            <div>
-                <h2>비밀번호 재설정</h2>
-            </div>
-            <form>
+        <div style="display: flex;">
+            <div style="margin: auto; text-align: center; width: 500px; height: 600px; 
+            position: absolute; left:50%; margin-left: -250px; top: 50%; margin-top: -300px;">
                 <div>
-                    <div class="box">
-                        <div id="new_pw">
-                            <input type="text" placeholder="새 비밀번호">
-                        </div>
-                        <div id="new_conf_pw">
-                            <input type="text" placeholder="새 비밀번호 확인">
-                        </div>
-                    </div>
-                    <div class="btn">
-                        <a href="">확인</a>
-                    </div>
+                    <h2>비밀번호 재설정</h2>
                 </div>
-            </form>
+                <form>
+                    <div>
+                        <div class="box" style="border-top : 1px solid #ddd; border-bottom: 1px solid #ddd;">
+                            <div id="new_pw" style="margin: 20px;">
+                                <input type="text" placeholder="새 비밀번호" style="width: 250px; height: 30px;">
+                            </div>
+                            <div id="new_conf_pw" style="margin: 20px;">
+                                <input type="text" placeholder="새 비밀번호 확인" style="width: 250px; height: 30px;">
+                            </div>
+                        </div>
+                        <div style="margin: 10px; color: #8c8c8c; font-size: small;">
+                            영문, 숫자, 특수문자를 함께 사용하세요. (8자 이상 16자 이하)
+                        </div>
+                        <button type="button" style="height: 30px; margin: 10px;">확인</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </body>
 </html>
