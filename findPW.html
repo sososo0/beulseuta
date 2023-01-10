@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <title>비밀번호 찾기</title>
     <head>
+        <meta charset="utf-8">
+        <title>비밀번호 찾기</title>
+        <link rel="stylesheet" href="findPW.css">
     </head>
     <body>
-        <div style="display: flex;">
+        <div id="container" style="display: flex;">
             <div style="margin: auto; text-align: center; width: 500px; height: 600px; 
                     position: absolute; left:50%; margin-left: -250px; top: 50%; margin-top: -300px;">
                 <form>
                     <div>
                         <h2>비밀번호 찾기</h2>
-                        <h3>비밀번호를 찾고자하는 아이디를 입력해주세요.</h3>
+                        <h4>비밀번호를 찾고자하는 아이디를 입력해주세요.</h4>
                     </div>
                     <div style="border-top : 1px solid #ddd; border-bottom: 1px solid #ddd;">
                         <div style="margin-top: 20px; margin-bottom: 20px;">
-                            <input type="text" placeholder="블로그 아이디" maxlength="40" style="width: 250px; height: 30px; margin: 10px;">
-                            <button type="button" style="height: 30px;">다음</button>
+                            <input type="text" id="InputId"placeholder="블로그 아이디" maxlength="40" style="width: 250px; height: 30px; margin: 10px;">
+                            <button type="button" id="findBtn" style="height: 30px;">다음</button>
                         </div>
                     </div>
                     <div style="margin-top: 20px;">
                         아이디가 기억나지 않는다면?
-                        <a href="">아이디 찾기</a> 
+                        <a href="#" onclick="window.open('findID.html')">아이디 찾기</a> 
                     </div>
                 </form>
                 <div style="text-align: center; margin-top: 20px;">
@@ -28,5 +30,6 @@
                 </div>
             </div>
         </div>
+        <script src="findPW.js"></script>
     </body>
 </html>
