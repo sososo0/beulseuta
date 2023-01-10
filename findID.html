@@ -39,7 +39,11 @@
                                     <input type="text" id="authNo" placeholder="인증번호 6자리 숫자 입력" maxlength="40" style="width: 250px; height: 30px; margin: 10px;">
                                 </dd>
                                 <dd style="text-align: left; margin-left: 150px;">
-                                    <div style="margin: 10px; color: #8c8c8c; font-size: small;">인증번호가 오지 않는다면?</div>
+                                    <div id="authNoProb" style="margin: 10px; color: #8c8c8c; font-size: small;">인증번호가 오지 않는다면?</div>
+                                    <div id="help" style="display: none; margin: 10px; color: #8c8c8c; font-size: small; border: 1px solid #ddd; padding-left: 5px; padding-right: 5px;">
+                                        <p>발송한 메일이 스팸 메일로 분류된 것은 아닌지 확인해 주세요. 스팸 메일함에도 없다면, <br>
+                                        다시 한 번 '인증번호 받기'를 눌러 주세요.</p>
+                                    </div>
                                 </dd>                        
                             </dl>
                         </div>
@@ -47,7 +51,7 @@
                     <button type="button" id="findIDBtn" style="height: 30px; margin: 10px;">다음</button>
                 </form>
                 <div style="text-align: center; margin-top: 20px;">
-                    <a href="">블스타</a> 
+                    <a href="#" onclick="window.open('home.html')">블스타</a> 
                 </div>
             </div>
         </div>

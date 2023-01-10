@@ -17,6 +17,8 @@ function resetPW(){
         if(newPW == confPW){
             //변경된 비밀번호 정보 넘겨주기
             alert("비밀번호가 변경되었습니다.");
+            //홈으로 이동
+            window.open('home.html');
         }
         else{
             alert("비밀번호 확인이 잘못 입력되었습니다!!");
